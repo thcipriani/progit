@@ -355,7 +355,7 @@ Notice that you have to tell the command where to find your Git repositories wit
 	    ServerName gitserver
 	    DocumentRoot /var/www/gitweb
 	    <Directory /var/www/gitweb>
-	        Options ExecCGI +FollowSymLinks +SymLinksIfOwnerMatch
+	        Options +ExecCGI +FollowSymLinks +SymLinksIfOwnerMatch
 	        AllowOverride All
 	        order allow,deny
 	        Allow from all
